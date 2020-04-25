@@ -14,7 +14,11 @@
     <input type="text" name="name">
     <input type="text" name="stats">
     <input type="file" name="image">
-    <input type="text" name="type">
+    <select name="type_items">
+        @foreach($category as $item => $value)
+        <option value="{{$value->id}}">{{$value->type}}</option>
+        @endforeach
+    </select>
     <input type="submit">
 </form>
 

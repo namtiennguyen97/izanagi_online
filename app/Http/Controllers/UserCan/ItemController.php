@@ -4,6 +4,7 @@
 namespace App\Http\Controllers\UserCan;
 
 
+use App\Categories;
 use App\Http\Controllers\Controller;
 use App\Item;
 use Illuminate\Http\Request;
@@ -19,12 +20,18 @@ class ItemController extends Controller
         }
     return view('user.items.index',compact('item'));
     }
+// truyen category vao
+//    public function category(){
+//        $category = Categories::all();
+//        return view('user.items.create',compact('category'));
+//    }
 
     public function create(){
         if (!$this->userCan('view-page-guest')) {
             return view('errors.er403');
         }
-        return view('user.items.create');
+        $category = Categories::all();
+        return view('user.items.create', compact('category'));
     }
     public function store(Request $request){
         $item = new Item();
@@ -40,7 +47,7 @@ class ItemController extends Controller
             $item->image = $pushImage;
         }
         $item->user_id = Auth::user()->id;
-        $item->type = $request->type;
+        $item->type_items = $request->input('type_items');
         $item->save();
         return redirect()->route('user.items.index');
     }

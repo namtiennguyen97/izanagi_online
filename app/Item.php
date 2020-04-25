@@ -10,14 +10,14 @@ class Item extends Model
 
     public function category()
     {
-        return $this->hasOne(Categories::class);
+        return $this->belongsTo(Categories::class,'type_items','id');
     }
     public $fillable = [
       'name',
       'stats',
       'image',
       'desc',
-        'type'
+        'type_items',
     ];
 
     public function user(){

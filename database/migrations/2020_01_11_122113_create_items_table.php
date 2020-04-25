@@ -21,8 +21,8 @@ class CreateItemsTable extends Migration
             $table->text('desc')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->unsignedBigInteger('type')->nullable();
-            $table->foreign('type')->references('id')->on('category');
+            $table->unsignedBigInteger('type_items')->nullable();
+            $table->foreign('type_items')->references('id')->on('category');
             $table->timestamps();
         });
     }

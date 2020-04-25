@@ -48,21 +48,22 @@
                             <table class="table table-hover">
                                 <tr>
                                     <th style="text-align: center">ID</th>
-                                    <th style="text-align: center">Username</th>
-                                    <th style="text-align: center">Status</th>
+                                    <th style="text-align: center">Name</th>
+                                    <th style="text-align: center">Image</th>
                                     {{--                                    <th style="text-align: center">Avatar</th>--}}
                                     {{--                                    <th style="text-align: center">Gender</th>--}}
-                                    <th style="text-align: center">Email</th>
-                                    <th style="text-align: center">Role</th>
+                                    <th style="text-align: center">Type</th>
+                                    <th style="text-align: center">Upload By</th>
                                     <th>Delete</th>
                                     <th>Edit</th>
                                 </tr>
                                 @foreach($item as $key => $value)
                                     <tr>
+                                        <td style="text-align: center">{{$key++}}</td>
                                         <td style="text-align: center">{{$value->name}}</td>
-                                        <td style="text-align: center">{{$value->stats}}</td>
                                         <td style="text-align: center"><img src="{{asset("storage/".$value->image)}}" style="width: 90px;height: 90px"></td>
-                                        <td style="text-align: center">{{$value->type}}</td>
+                                        <td style="text-align: center">{{$value->category->type}}</td>
+                                        <td style="text-align: center">{{$value->user->name}}</td>
                                         <td>
                                             <button class="btn btn-danger btn-sm"><a
                                                     href="" id="delete"><i
