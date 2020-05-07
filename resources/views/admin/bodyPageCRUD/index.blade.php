@@ -47,27 +47,27 @@
                         <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
                                 <tr>
-                                    <th style="text-align: center">Name</th>
-                                    <th style="text-align: center">Stats</th>
+                                    <th style="text-align: center">Hint</th>
+                                    <th style="text-align: center">Title</th>
                                     <th style="text-align: center">Image</th>
-                                    <th style="text-align: center">Type</th>
+                                    <th style="text-align: center">Categories</th>
                                     <th>Delete</th>
                                     <th>Edit</th>
                                 </tr>
-                                @foreach($item as $key => $value)
+                                @foreach($bodyPage as $key => $value)
                                     <tr>
-                                        <td style="text-align: center">{{$value->name}}</td>
-                                        <td style="text-align: center">{{$value->stats}}</td>
+                                        <td style="text-align: center">{{$value->hint}}</td>
+                                        <td style="text-align: center">{{$value->title}}</td>
                                         <td style="text-align: center"><img src="{{asset("storage/".$value->image)}}" style="width: 90px;height: 90px"></td>
-                                        <td style="text-align: center">{{$value->type}}</td>
+                                        <td style="text-align: center">{{$value->blogCategories->type}}</td>
                                         <td>
                                             <button class="btn btn-danger btn-sm"><a
-                                                    href="{{route('items.destroy',$value->id)}}" id="delete"><i
+                                                    href="{{route('hint.destroy',$value->id)}}" id="delete"><i
                                                         style="color: white" class="fa fa-trash"></i></a></button>
                                         </td>
                                         <td>
                                             <button class="btn btn-success btn-sm"><a
-                                                    href="{{route('items.edit',$value->id)}}"><i
+                                                    href="{{route('hint.edit',$value->id)}}"><i
                                                         style="color: white" class="fa fa-pencil-square-o"
                                                         aria-hidden="true"></i></a></button>
                                         </td>
@@ -80,13 +80,12 @@
                     <!-- /.box -->
                 </div>
             </div>
-            <a  class="btn btn-primary" href="{{route('items.create')}}" id="addItem">Add</a>
+            <a href="{{route('bodyPage.create')}}" class="btn btn-primary" id="abc">Add</a>
+
         </section>
+
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-    <div id="showAddItem">
-<!-- show here-->
-    </div>
 @stop
 

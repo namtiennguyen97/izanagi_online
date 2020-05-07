@@ -39,6 +39,14 @@ Route::group(['namespace'=>'Admin','prefix'=>'hint'], function (){
    Route::post('edit/{id}','HintController@update')->name('hint.update');
 });
 
+Route::group(['namespace'=>'Admin','prefix'=>'bodyPage'], function (){
+   Route::get('/','BodyPageController@index')->name('bodyPage.index');
+   Route::get('/create','BodyPageController@create')->name('bodyPage.create');
+   Route::post('/create','BodyPageController@store')->name('bodyPage.store');
+   Route::get('/edit/{id}','BodyPageController@edit')->name('bodyPage.edit');
+   Route::post('/edit/{id}','BodyPageController@update')->name('bodyPage.update');
+   Route::get('/destroy/{id}','BodyPageController@destroy')->name('bodyPage.destroy');
+});
 
 Route::group(['namespace'=>'Admin','prefix'=>'item'],function (){
    Route::get('/','ItemController@index')->name('itemAdmin.index');

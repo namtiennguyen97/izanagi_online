@@ -38,8 +38,8 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{route('admin.page')}}"><i class="fa fa-circle-o"></i>Quản lý User</a></li>
-                    <li><a href="{{route('hint.index')}}"><i class="fa fa-circle-o"></i>Quản lý thông báo</a></li>
                     <li><a href="{{route('itemAdmin.index')}}"><i class="fa fa-circle-o"></i>Quản lý Items</a></li>
+
                 </ul>
             </li>
             <li>
@@ -84,14 +84,14 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-edit"></i> <span>Forms</span>
+                    <i class="fa fa-edit"></i> <span>Giao diện Website</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+                    <li><a href="{{route('hint.index')}}"><i class="fa fa-circle-o"></i>Quản lý thông báo</a></li>
+                    <li><a href="{{route('bodyPage.index')}}"><i class="fa fa-circle-o"></i>BodyPage</a></li>
                     <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
                 </ul>
             </li>

@@ -6,10 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogCategories extends Model
 {
+    public $table="blogCategories";
     public $fillable = [
-      'hint',
       'title',
-      'image',
-        'categories_id'
+        'type'
     ];
+
+    public function bodyPage(){
+        return $this->hasMany(BodyPageAdmin::class);
+    }
 }
