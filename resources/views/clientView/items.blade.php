@@ -18,7 +18,7 @@
         <tr>
             <th scope="row">{{$value->name}}</th>
             <td><img src="{{asset("storage/".$value->image)}}" style="width: 90px;height: 90px"></td>
-            <td>{{$value->type_items}}</td>
+            <td>{{$value->category->type}}</td>
             <td>{{$value->user->name}}</td>
         </tr>
             @endforeach

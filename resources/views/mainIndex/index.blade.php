@@ -304,7 +304,7 @@
                 <div class="feature-item set-bg" data-setbg="{{asset('izanagi/img/mage.jpg')}}">
                     <span class="cata strategy">Mage</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">Justo tempor, rutrum erat id, molestie</a></h5>
+                        <h5><a href="#">Là class sử dụng pháp thuật chuyên tấn công diện rộng</a></h5>
                         <p>Vai trò chủ đạo: Cân bằng/Buff/Dọn dẹp</p>
                         <a href="#" class="fi-comment">3 Comments</a>
                     </div>
@@ -314,8 +314,8 @@
                 <div class="feature-item set-bg" data-setbg="{{asset('izanagi/img/cleric.jpg')}}">
                     <span class="cata new">Cleric</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">Nullam lacinia ex eleifend orci porttitor</a></h5>
-                        <p>Vai trò chủ đạo:. </p>
+                        <h5><a href="#">Là một class đặc biệt chuyên sử dụng những kĩ năng hồi phục lẫn hỗ trọ tốt nhất game</a></h5>
+                        <p>Vai trò chủ đạo:. Buff, Tanker </p>
                         <a href="#" class="fi-comment">3 Comments</a>
                     </div>
                 </div>
@@ -324,8 +324,8 @@
                 <div class="feature-item set-bg" data-setbg="{{asset('izanagi/img/warrior.jpg')}}">
                     <span class="cata racing">Warrior</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">Lacinia ex eleifend orci suscipit</a></h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <h5><a href="#">Một class cận chiến với thể lực bất tử, chuyên chống đòn lẫn tạo sức phá diện rộng.</a></h5>
+                        <p>Vai trò chủ đạo: Tanker, Dps </p>
                         <a href="#" class="fi-comment">3 Comments</a>
                     </div>
                 </div>
