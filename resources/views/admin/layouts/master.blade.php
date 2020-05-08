@@ -46,15 +46,17 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <script src="{{asset('ajax.js')}}"></script>
-    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
+    <script src="{{asset('ajax.js')}}"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous">
     </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+
 <div class="wrapper">
     <script>
         $.ajaxSetup({
@@ -63,6 +65,7 @@
             }
         });
     </script>
+
     @include('admin.layouts.nav')
 
     @include('admin.layouts.menu')

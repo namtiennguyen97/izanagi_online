@@ -1,6 +1,5 @@
 @extends('admin.layouts.master')
 @section('content')
-
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
@@ -13,23 +12,22 @@
                 <li class="active">Dashboard</li>
             </ol>
         </section>
-<form method="post" action="{{route('hint.store')}}">
-    @csrf
-{{--    <input name="title" type="text">--}}
-    <select name="title">
-        <option value="New">
-            New
-        </option>
-        <option value="Note">
-            Note
-        </option>
-        <option value="Alert">
-            Alert
-        </option>
-    </select>
-    <input name="content" type="text">
-    <input type="submit">
-</form>
+
+        <input id="editor" type="text" name="abc">
+
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .then( editor => {
+                    console.log( editor );
+                } )
+                .catch( error => {
+                    console.error( error );
+                } );
+
+
+
+
+        </script>
     </div>
 @stop
-

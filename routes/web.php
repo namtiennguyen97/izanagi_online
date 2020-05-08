@@ -48,6 +48,10 @@ Route::group(['namespace'=>'Admin','prefix'=>'bodyPage'], function (){
    Route::get('/destroy/{id}','BodyPageController@destroy')->name('bodyPage.destroy');
 });
 
+Route::group(['namespace'=>'Admin','prefix'=>'adminBlog'], function (){
+   Route::get('/','BlogAdminController@index');
+});
+
 Route::group(['namespace'=>'Admin','prefix'=>'item'],function (){
    Route::get('/','ItemController@index')->name('itemAdmin.index');
     Route::get('/add','ItemController@create')->name('items.create');

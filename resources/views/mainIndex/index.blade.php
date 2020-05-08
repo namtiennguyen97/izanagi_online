@@ -340,10 +340,11 @@
 <section class="recent-game-section spad set-bg" data-setbg="{{asset('izanagi/img/maintheme.jpg')}}">
     <div class="container">
         <div class="section-title">
-            <div class="cata new">new</div>
-            <h2>Recent Games</h2>
+            <div class="cata new">New</div>
+            <h2 style="color: white">Blog Izanagi Online</h2>
         </div>
         <div class="row">
+            <!-- cat tu doan nay-->
             <div class="col-lg-4 col-md-6">
                 <div class="recent-game-item">
                     <div class="rgi-thumb set-bg" data-setbg="{{asset('izanagi/img/recent-game/1.jpg')}}">
@@ -361,40 +362,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="{{asset('izanagi/img/recent-game/2.jpg')}}">
-                        <div class="cata racing">racing</div>
-                    </div>
-                    <div class="rgi-content">
-                        <h5>Susce pulvinar metus nulla, vel facilisis sem </h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur
-                            elit. </p>
-                        <a href="#" class="comment">3 Comments</a>
-                        <div class="rgi-extra">
-                            <div class="rgi-star"><img src="{{asset('izanagi/img/icons/star.png')}}" alt=""></div>
-                            <div class="rgi-heart"><img src="{{asset('izanagi/img/icons/heart.png')}}" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="{{asset('izanagi/img/recent-game/3.jpg')}}">
-                        <div class="cata adventure">Adventure</div>
-                    </div>
-                    <div class="rgi-content">
-                        <h5>Suspendisse ut justo tem por, rutrum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur
-                            elit. </p>
-                        <a href="#" class="comment">3 Comments</a>
-                        <div class="rgi-extra">
-                            <div class="rgi-star"><img src="{{asset('izanagi/img/icons/star.png')}}" alt=""></div>
-                            <div class="rgi-heart"><img src="{{'izanagi/img/icons/heart.png'}}" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+           <!-- ket thuc cat tu doan nay-->
+
         </div>
     </div>
 </section>
